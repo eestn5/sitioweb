@@ -8,16 +8,18 @@ const Main = ({ active }) => {
     <section className="navbar__main">
       <Logo />
       <section className="navbar__main--elements">
-        {
-          pages.map(page => (
-            <MainLink
-              key={page[0]}
-              name={page[0]}
-              href={page[1]}
-              active={page[0] === active}
-            />
-          ))
-        }
+        <section className="navbar__main--elements-cont">
+          {
+            pages.map(page => (
+              <MainLink
+                key={page[0]}
+                name={page[0]}
+                href={page[1]}
+                active={page[0] === active}
+              />
+            ))
+          }
+        </section>
         <Search />
       </section>
     </section>

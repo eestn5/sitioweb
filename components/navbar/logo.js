@@ -9,7 +9,9 @@ const Logo = () => {
           src="/logo.svg"
           width={50}
           height={50}
+          layout="fixed"
           alt="Logo escuela"
+          className="components__navbar--logo--img"
         />
       </a>
     </Link>
