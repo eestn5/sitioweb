@@ -1,17 +1,18 @@
 import React from 'react';
-import Head from 'next/head';
 import Navbar from '../components/navbar/navbar';
-export default function Home() {
+import Head from 'next/head';
+const Page = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Home</title>
+        <title>Login</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar active="Inicio" />
+      <Navbar />
       <section>
-        <h1>Estoy funcionando!</h1>
+        <h1>Login admin</h1>
       </section>
     </React.Fragment>
   );
 }
+export default Page;
